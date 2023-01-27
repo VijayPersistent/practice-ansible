@@ -3,7 +3,7 @@
     name: roboshop
 
 - name: Clean Up old App Content
-  ansible.builtin.files:
+  ansible.builtin.file:
     path: /home/roboshop/{{COMPONENT}}
     state: absent
 
